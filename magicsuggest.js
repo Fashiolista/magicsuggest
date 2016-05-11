@@ -574,9 +574,6 @@
          */
         this.setName = function(name){
             cfg.name = name;
-            if(name){
-                cfg.name += name.indexOf('[]') > 0 ? '' : '[]';
-            }
             if(ms._valueContainer){
                 $.each(ms._valueContainer.children(), function(i, el){
                     el.name = cfg.name;
